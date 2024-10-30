@@ -1,31 +1,31 @@
 import {
-  useQuery,
-  useMutation,
-  useQueryClient,
   useInfiniteQuery,
+  useMutation,
+  useQuery,
+  useQueryClient,
 } from "@tanstack/react-query";
 
-import { QUERY_KEYS } from "@/lib/react-query/queryKeys";
 import {
-  createUserAccount,
-  signInAccount,
-  getCurrentUser,
-  signOutAccount,
-  getUsers,
   createPost,
-  getPostById,
-  updatePost,
-  getUserPosts,
+  createUserAccount,
   deletePost,
-  likePost,
-  getUserById,
-  updateUser,
-  getRecentPosts,
-  getInfinitePosts,
-  searchPosts,
-  savePost,
   deleteSavedPost,
+  getCurrentUser,
+  getInfinitePosts,
+  getPostById,
+  getRecentPosts,
+  getUserById,
+  getUserPosts,
+  getUsers,
+  likePost,
+  savePost,
+  searchPosts,
+  signInAccount,
+  signOutAccount,
+  updatePost,
+  updateUser,
 } from "@/lib/appwrite/api";
+import { QUERY_KEYS } from "@/lib/react-query/queryKeys";
 import { INewPost, INewUser, IUpdatePost, IUpdateUser } from "@/types";
 
 // ============================================================
@@ -59,7 +59,7 @@ export const useGetPosts = () => {
   return useInfiniteQuery({
     queryKey: [QUERY_KEYS.GET_INFINITE_POSTS],
     queryFn: getInfinitePosts as any,
-    initialPageParam: undefined,
+    initialPageParam: 0,
     getNextPageParam: (lastPage: any) => {
       // If there's no data, there are no more pages.
       if (lastPage && lastPage.documents.length === 0) {
