@@ -55,8 +55,6 @@ Explore social media with this user-friendly platform that has a nice look and l
 
 👉 **Backend as a Service (BaaS) - Appwrite**: Utilize Appwrite as a Backend as a Service solution for streamlined backend development, offering features like authentication, database, file storage, and more
 
-and many more, including code architecture and reusability 
-
 ## Quick Start
 
 Follow these steps to set up the project locally on your machine.
