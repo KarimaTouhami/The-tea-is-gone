@@ -20,6 +20,7 @@ module.exports = {
     },
     extend: {
       colors: {
+        'custom-purple': '#CB6CE6',
         'primary-500': '#877EFF',
         'primary-600': '#5D5FEF',
         'secondary-500': '#FFB620',
