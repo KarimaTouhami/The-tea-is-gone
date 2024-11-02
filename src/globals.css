@@ -246,13 +246,6 @@
   }
 }
 
-.logo {
-  width: 171px;
-  height: 28px;
-  background: url('path/to/logo.png') no-repeat center center;
-  background-size: contain;
-}
-
 @layer components {
   /* SHADCN COMPONENTS */
   /* Form */
