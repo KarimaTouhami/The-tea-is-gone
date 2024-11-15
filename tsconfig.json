@@ -8,7 +8,7 @@
     "forceConsistentCasingInFileNames": true,
 
     /* Bundler mode */
-    "moduleResolution": "node",  // Changed to node
+    "moduleResolution": "node",
     "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
@@ -20,6 +20,10 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
+
+    /* Compatibility flags */
+    "allowSyntheticDefaultImports": true,  // Add this
+    "esModuleInterop": true,              // Add this
 
     /* Paths for module resolution */
     "baseUrl": ".",
